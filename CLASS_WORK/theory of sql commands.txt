@@ -1,0 +1,40 @@
+SQL commands:
+DDL-data defination language
+DML-data manipalution language
+DCL-data control language
+DQL- data query language
+
+syntax to create coloumn: datatype col_name constraints;
+ex:id int primary key
+
+constraint: 
+primary key:no duplicate,not null
+unique:no duplicate,null
+not null:compulsary add data
+int pr default 50 ;
+check-condition provides on data
+auto incerement
+limit
+
+DDL-create,alter,drop,truncate
+
+create-table and database
+
+alter:
+to rename table
+add coloumn
+remove coloumn
+to change datatype of coloumn 
+
+drop: remove table from database
+
+truncate:remove records from table
+
+DML- insert update  delete
+insert- to add data
+if we want to change order of coloumn or 
+we want skip to add data in any coloumn then add coloumn name
+
+update-it's used to update inserted data
+
+delete-it's used to delete specified record from table
