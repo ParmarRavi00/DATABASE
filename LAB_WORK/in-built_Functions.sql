@@ -28,7 +28,9 @@ from student;
 select id, name, length(name) as length_of_name
 from student;
 
-select name, lcase(name) as lower_case
+select id, name, lcase(name) as Lower_Case_Name 
+from students;
+select name, lcase(name) as lower_case -- index nu name na aapiye to bydefault je hoy te j lay le
 from student;
 
 select name, ucase(name) as upper_case

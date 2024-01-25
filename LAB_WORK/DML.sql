@@ -1,19 +1,26 @@
--- DML :- insert, update, delete
+-- DML :- Data Manipalution Language (insert, update, delete)
 
-use PHP;
+-- insert
+
+select * from students;
+
+insert into students(name,id,mobile, address) values
+("xyz",101,"7852385632", "Rajkot");
+
+insert into students values
+(103,"abc","5698741238", 58,"Surat"),
+(104,"pqr","5698741239", 66,"Rajkot"),
+(105,"xyz","5298741236", 60,"Vadodara");
+
 
 -- update
 
-insert into student(id, name, Phone, DOB, Percentage) values
-(1, "Harshit", "9876543210", "2000-05-21", 80);
+update students
+set per=57
+where id=103;
 
-update student
-set name="Mayur"
-where id=1;
-
-select * from student;
 
 -- delete
 
-delete from student
-where id=1;
+delete from students
+where id=101;
