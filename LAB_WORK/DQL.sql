@@ -80,6 +80,7 @@ select * from students
 where name like '%R%';
 
 select * from students;
+
 -- group by 
 select count(id), address from students
 group by address;
