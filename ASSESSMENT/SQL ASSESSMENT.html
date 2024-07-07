@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <style type="text/css">
+        .main{
+            height: auto;
+            margin-left: 30%;
+        }
+    </style>
+</head>
+<body>
+<h1 align="center">SQL- ASSESMENT</h1>
+ <h2 align="center">sql -table</h2>
+ <h3>Table Name = nob_win</h3>
+ <div class="main">
+ 	<img src="sqltable.jpg">
+    <br><br>
+ </div>
+ 
+<h2 align="center" style="font-size: 35px;"><b>
+    Write sql query to find the nobel prize winners of the year 1970. Return year,subject 
+and winner</b></h2>
+   <p align="center" style="font-size: 40px;">ANSWER</p>
+   <strong style="font-size: 30px;margin-left: 123px;">
+       SELECT year,subject,winner FROM nob_win
+WHERE year = 1970;
+   </strong>
+</b>
+<br>
+<br>
+<img style=" margin-left: 223px;" src="qvery 1.jpg">
+<!-- ---------------------------------- -->
+<h2 align="center" style="font-size: 35px;"><b>
+   Write sql query to find the nobel prize winners in chemistry between the years 1965 
+and 1975. Begin and end values are includedReturn year, subject, winner and 
+countr</b></h2>
+   <p align="center" style="font-size: 40px;">ANSWER</p>
+   <strong style="font-size: 30px;margin-left: 123px;">
+       SELECT year,subject,winner,country FROM nob_win WHERE subject ='Chemistry'AND year>=1965 AND year<=1975;
+   </strong>
+</b>
+<br>
+<br>
+<img style=" margin-left: 223px;" src="qvery2.jpg">
+<!-- ---------------------------------- -->
+<h2 align="center" style="font-size: 35px;"><b>
+  Write sql query to retrieve the details of the winners whose first name matches with 
+the string ‘Louis’. Return year,subject,winner,countr</b></h2>
+   <p align="center" style="font-size: 40px;">ANSWER</p>
+   <strong style="font-size: 30px;margin-left: 123px;">
+      SELECT year, subject, winner, country FROM nob_win WHERE winner LIKE 'Louis %';
+
+   </strong>
+</b>
+<br>
+<br>
+<img style=" margin-left: 223px;" src="qvery3.jpg">
+
+<!-- ---------------------------------- -->
+<h2 align="center" style="font-size: 35px;"><b>
+ Write sql query to find Nobel prize winners for the subject that does not begin with 
+the letter ‘P’. Order the result by year, descending and winner in ascending
+</b></h2>
+   <p align="center" style="font-size: 40px;">ANSWER</p>
+   <strong style="font-size: 30px;margin-left: 123px;">
+      SELECT * FROM nob_win WHERE subject NOT LIKE 'P%' ORDER BY year DESC, winner;
+
+   </strong>
+</b>
+<br>
+<br>
+<img style=" margin-left: 223px;" src="qvery4.jpg">
+
+<!-- ---------------------------------- -->
+<h2 align="center" style="font-size: 35px;"><b>
+ Write sql query to find the details of 1970 Nobel prize winners. Order the result by 
+subject, ascending except for ‘Chemistry’ and ‘Economics’ which will come at the 
+end of the result set. Return year, subject, winner , country and category.
+
+</b></h2>
+   <p align="center" style="font-size: 40px;">ANSWER</p>
+   <strong style="font-size: 30px;margin-left: 123px;">
+     SELECT year, subject, winner, country, categoryFROM nob_win WHERE year = 1970 ORDER BY CASE WHEN subject='Chemistry' THEN 2 WHEN subject='Economics'THEN 3 ELSE 1 END,subject ASC;
+
+   </strong>
+</b>
+<br>
+<br>
+<img style=" margin-left: 223px;" src="qvery 5.jpg">
+<br>
+<br>
+<br>
+           <h1 align="center" style=" font-family: cursive;">🙏🙏----COMPLETED----🙏🙏</h1>
+</body>
+</html>
